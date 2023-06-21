@@ -1,9 +1,9 @@
 FROM registry.access.redhat.com/ubi8/ubi
 RUN yum -y install wget unzip socat && yum clean all
-RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && \
-    unzip ngrok-stable-linux-amd64.zip && \
+RUN https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && \
+    unzip ngrok-v3-stable-linux-amd64.tgz && \
     cp ngrok /usr/bin && \
-    rm ngrok-stable-linux-amd64.zip
+    rm ngrok-v3-stable-linux-amd64.tgz
 COPY bin/start.sh /bin/start.sh
 EXPOSE 8080
 ENTRYPOINT /bin/start.sh
