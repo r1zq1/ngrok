@@ -114,5 +114,5 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: rizqiard/mygrok3
+        name: ngrok/ngrok
       name: latest
