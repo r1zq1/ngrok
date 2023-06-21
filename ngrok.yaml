@@ -114,5 +114,5 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: quay.io/openshiftfordevelopers/ngrok:latest
+        name: rizqiard/mygrok3
       name: latest
